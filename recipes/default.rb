@@ -7,6 +7,10 @@ apt_update "update" do
   action :update
 end
 
+apt_upgrade "vagrant" do
+  action :upgrade
+end
+
 package "nginx" do
   action :install
 end
