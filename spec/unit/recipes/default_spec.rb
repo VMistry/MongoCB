@@ -36,7 +36,7 @@ describe 'nginxCB::default' do
     end
 
     it "should run apt get update" do
-      expect(chef_run).to update_apt_update("update_sources")
+      expect(chef_run).to update_apt_update("update")
     end
   end
 
