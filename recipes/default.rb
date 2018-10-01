@@ -7,7 +7,7 @@ apt_update "update" do
   action :update
 end
 
-apt_upgrade "vagrant" do
+package "vagrant" do
   action :upgrade
 end
 
